@@ -29,4 +29,4 @@ setup(name='examplePackage',
           'Programming Language :: Python :: 2',
           'Topic :: Software Development :: Libraries',
       ],
-      url='http://github.com/henriquebastos/inputao/',)
+      url='https://github.com/WilliamYizima/examplePackage/',)

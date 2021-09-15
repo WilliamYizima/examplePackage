@@ -1,7 +1,7 @@
 from examplePackage import SerializerFactory, TargetServiceBuilder
 
 factory = SerializerFactory()
-a = factory.register('PANDORA', TargetServiceBuilder())
+a = factory.register('zapdos', TargetServiceBuilder())
 
 
 payload01 = {
@@ -10,7 +10,7 @@ payload01 = {
     'created_at':'data_criacao'
 }
 
-pandara = factory.create('PANDORA', **payload01)
+tester = factory.create('zapdos', **payload01)
 
 payload02 = {
     'status':'state',
@@ -27,4 +27,4 @@ request01 = {
     'data_criacao':'11-09-2019'
 }
 
-print(pandara.serializer(request01))
+print(tester.serializer(request01))
