@@ -43,4 +43,8 @@ obs:
 ```
    pip install {seucaminho}/examplePackage-0.0.1.tar.gz
 ```
+- Baixar pelo git:
+```
+   pip install git+https://github.com/WilliamYizima/examplePackage
+```
 
