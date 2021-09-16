@@ -8,7 +8,7 @@ README = os.path.join(os.path.dirname(__file__), 'README.md')
 setup(name='examplePackage',
       version='0.0.1',
       description='Serialize payload TargetService',
-      long_description=open(README).read(),
+      long_description=open('README.md').read(),
       long_description_content_type="text/markdown",
       author="William Yizima", author_email="william.yizima@hotmail.com",
       license="MIT",
@@ -29,4 +29,9 @@ setup(name='examplePackage',
           'Programming Language :: Python :: 2',
           'Topic :: Software Development :: Libraries',
       ],
+        install_requires=[
+        'azure-functions >= 1.7.0, < 2.0.0',
+        'requests'
+        # Any additional packages that will be used in your extension
+        ],
       url='https://github.com/WilliamYizima/examplePackage/',)
