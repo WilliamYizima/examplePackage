@@ -1,5 +1,5 @@
 # coding: utf-8
-from setuptools import setup
+from setuptools import find_packages, setup
 import os
 
 
@@ -8,12 +8,12 @@ README = os.path.join(os.path.dirname(__file__), 'README.md')
 setup(name='examplePackage',
       version='0.0.1',
       description='Serialize payload TargetService',
-      long_description=open('README.md').read(),
+      long_description=open(README).read(),
       long_description_content_type="text/markdown",
       author="William Yizima", author_email="william.yizima@hotmail.com",
       license="MIT",
       keywords=[],
-      packages=['examplePackage'],
+      packages=find_packages(where='.'),
       package_dir={"examplePackage": "examplePackage"},
       zip_safe=True,
       platforms='any',
